@@ -206,13 +206,22 @@ object-fit: cover;
 }
 
 .work__day {
-  text-align: center;
+  align-items: center;
   min-width: 60px;
-  height: 25px;
+  min-height: 25px;
   background-color: #142850;
   border-radius: 16px;
   color: white;
   margin-right: 20px;
+  font-weight: 50px;
+  font-size: 18px;
+  justify-content: center;
+}
+@media (max-width: 480px) {
+  .fetured__works {
+    display: flex;
+    overflow: auto;
+  }
 }
 
 .featured {
@@ -224,6 +233,7 @@ object-fit: cover;
   display: flex;
   padding: 35px 0;
   border-bottom: 1px solid #C4C4C4;;
+  flex: 0 0 100%;
 }
 
 .work__category {
@@ -245,3 +255,4 @@ object-fit: cover;
   flex: 0 0 246px;
   overflow: hidden;
 }
+
