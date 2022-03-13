@@ -62,6 +62,23 @@ h3 {
   font-size: 20px;
 }
 
+.header {
+  padding: 30px 0px;
+}
+
+.header__container {
+  max-width: 1032px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__list {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .header__burger {
   width: 30px;
   height: 22px;
@@ -73,15 +90,16 @@ h3 {
 .header__burger-el {
   height: 2px;
   width: 100%;
-  background-color: #21243d;
+  background-color: #21243D;
   position: relative;
 }
 
-.header__burger-el::before .header__burger-el:after {
+.header__burger-el::before,
+.header__burger-el::after {
   content: "";
   height: 2px;
   width: 100%;
-  background-color: #21243d;
+  background-color: #21243D;
   position: absolute;
 }
 
@@ -95,8 +113,17 @@ h3 {
 
 @media (max-width: 480px) {
   .header {
-    padding-top: 20px;
+      padding-top: 20px;
   }
+
+  .nav {
+      display: none;
+  }
+
+  .header__burger {
+      display: flex;
+  }
+}
 
   .nav {
     display: none;
@@ -105,7 +132,7 @@ h3 {
   .header__burger {
     display: flex;
   }
-}
+
 
 .about__container {
   display: flex;
@@ -194,35 +221,7 @@ h3 {
   margin-bottom: 44px;
 }
 
-.works {
-  display: flex;
-  margin-top: 66px;
-}
 
-.work__img {
-height: 100%;
-width: 100%;
-object-fit: cover;
-}
-
-.work__day {
-  align-items: center;
-  min-width: 60px;
-  min-height: 25px;
-  background-color: #142850;
-  border-radius: 16px;
-  color: white;
-  margin-right: 20px;
-  font-weight: 50px;
-  font-size: 18px;
-  justify-content: center;
-}
-@media (max-width: 480px) {
-  .fetured__works {
-    display: flex;
-    overflow: auto;
-  }
-}
 
 .featured {
   margin-top: 32px;
@@ -255,4 +254,58 @@ object-fit: cover;
   flex: 0 0 246px;
   overflow: hidden;
 }
+.work {
+  display: flex;
+  padding: 33px 0;
+  border-bottom: 1px solid #E0E0E0;
+}
 
+.work__img-wrap {
+  min-height: 180px;
+  flex: 0 0 246px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.work__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.work__subtitle {
+  display: flex;
+}
+
+.work__date {
+  margin-right: 26px;
+  background: #142850;
+  border-radius: 16px;
+  color: #FFFFFF;
+  min-height: 25px;
+  min-width: 65px;
+  font-weight: 900;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 480px) {
+  .featured__works {
+      display: flex;
+      overflow: auto;
+  }
+
+  .work {
+      padding: 0px 13px 17px;
+      flex-direction: column;
+      flex: 0 0 100%;
+  }
+}
+.work__info-title {
+  font-size: 30px;
+}
+.messengers {
+ display: flex;
+}
