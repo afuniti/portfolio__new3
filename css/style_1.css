@@ -33,15 +33,10 @@ h2,
 h3 {
   margin: 0;
 }
-.main {
-  flex: 1 1  auto;
-}
 
 .wrapper {
   min-height: 100%;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 .container {
@@ -50,7 +45,22 @@ h3 {
   padding: 0 5px;
 }
 
+.header {
+  padding: 30px 0px;
+}
 
+.header__container {
+  max-width: 1032px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__list {
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
 
 .header {
   padding: 30px 0px;
@@ -80,7 +90,7 @@ h3 {
 .header__burger-el {
   height: 2px;
   width: 100%;
-  background-color: #21243D;
+  background-color: #21243d;
   position: relative;
 }
 
@@ -89,7 +99,7 @@ h3 {
   content: "";
   height: 2px;
   width: 100%;
-  background-color: #21243D;
+  background-color: #21243d;
   position: absolute;
 }
 
@@ -103,18 +113,17 @@ h3 {
 
 @media (max-width: 480px) {
   .header {
-      padding-top: 20px;
+    padding-top: 20px;
   }
 
   .nav {
-      display: none;
+    display: none;
   }
 
   .header__burger {
-      display: flex;
+    display: flex;
   }
 }
-
 
 .nav {
   display: none;
@@ -244,7 +253,8 @@ h3 {
   margin-top: 10px;
 }
 
-
+.work__info {
+}
 .work__subtitle {
   display: flex;
 }
@@ -312,6 +322,11 @@ h3 {
 .work__info-title {
   font-size: 30px;
 }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .ul {
 display: flex;
@@ -322,86 +337,3 @@ display: flex;
 margin-right:32px ;
 
 }
-.blog__title {
-  font-size: 30px;
-  margin-bottom: 20px;
-   
-   font-size: 44px;
-}
-.blog__titles {
-  font-size: 30px;
-}
-
-.blog-container {
-font-family: "Roboto";
-font-weight: 60px;
-}
-.blog__articles-content{
-  margin-top: 21px;
-  font-size: 16px;
-}
-
-.blog__separator {
-  font-size: 20px;
-  margin: 0px 26px;
-  color: grey;
-}
-
-
-.footer {
-  padding: 51px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer__social-list {
-  display: flex;
-}
-
-.footer__social-item {
-  width: 30px;
-  height: 30px;
-  margin-right: 35px;
-  font-size: 0;
-}
-
-.footer__social-item:last-child {
-  margin-right: 0;
-}
-
-.footer__social-link {
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.vk {
-  background-image: url(img/vk.png);
-}
-
-.ok {
-  background-image: url(img/ok.png);
-}
-
-.github {
-  background-image: url(img/github.png);
-}
-
-.telegram {
-  background-image: url(img/telegram.png);
-}
-
-@media (max-width: 480px) {
- .blog {
-   display: flex;
-   width: 100%;
- }
-
-
-
-
-
